@@ -9,7 +9,7 @@ public class Wordle {
     public static final String GRIS = "\u001B[90m";
 
 	public static void titulo(){
-	System.out.println(RESET+"   La Palabra del Día "+AMARILLO);
+	System.out.println(AMARILLO+"   La Palabra del Día "+RESET);
 		
 	}
 	
