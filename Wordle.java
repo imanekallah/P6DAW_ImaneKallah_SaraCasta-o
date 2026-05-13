@@ -22,6 +22,13 @@ public class Wordle {
 			System.out.println("2- Nuevo juego");
 			System.out.println("3- Consultar puntuación");
 			System.out.println("4- Salir");
+			opcion=sc.nextInt();
+			switch opcion {
+				case 1 ->
+				case 2 ->
+				case 3 -> 
+				case 4 -> 
+			}
  		}while(opcion!=0);
 	}
 	
