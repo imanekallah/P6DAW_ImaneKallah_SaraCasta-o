@@ -12,7 +12,7 @@ public class Wordle {
 
 
     public static void menu(){
-		static Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		int opcion;
 		    System.out.println(AMARILLO+"          La Palabra del Día          "+RESET);	
 
