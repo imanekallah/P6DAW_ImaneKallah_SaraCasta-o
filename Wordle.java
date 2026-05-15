@@ -1,13 +1,19 @@
 package juegoPalabra;
 
 public class Wordle {
-
+    //Las constantes de los colores para el titulo
 	public static final String RESET = "\u001B[0m";
     public static final String VERDE = "\u001B[32m";
-    public static final String AMARILLO = "\u001B[33m";
-    public static final String ROJO = "\u001B[31m";
-    public static final String GRIS = "\u001B[90m";
-
+    
+    private static final String PALABRAS_FILE = "Palabras5L.txt";
+    private static final String SAVE_FILE = "wordle_save.dat";
+    private static final int MAX_INTENTOS = 6;
+    
+    private List<String> palabras;
+    private Partida partidaActual;
+    private Puntuacion sistemaPuntuaciones;
+    private Scanner scanner;
+    
 	
 
 
