@@ -3,7 +3,7 @@ package juegoPalabra;
 public class Wordle {
     
     private static final String SAVE_FILE = "wordle_save.dat";
-    private static final int MAX_INTENTOS = 6;
+    private static final int INTENTOS_MAX = 6;
     
     private List<String> palabras;
     private Partida partidaActual;
@@ -60,6 +60,22 @@ public class Wordle {
         }
     }
 
+	// Iniciar nuevo juego
+	 public void nuevoJuego() {
+        if (palabras.isEmpty()) {
+            System.out.println("¡No hay palabras disponibles! Asegúrate de que el archivo Palabras5L.txt existe y contiene palabras.");
+            return;
+        }
+        
+        Random random = new Random();
+        String palabraAleatoria = palabras.get(random.nextInt(palabras.size()));
+        partidaActual = new Partida(palabraAleatoria, INTENTOS_MAX);
+        
+        System.out.println("\n=== NUEVO JUEGO ===");
+        System.out.println("¡Adivina la palabra de 5 letras!");
+        
+        jugarPartida();
+    }
 	
 	public static void main(String[] args) {
 		menu();
