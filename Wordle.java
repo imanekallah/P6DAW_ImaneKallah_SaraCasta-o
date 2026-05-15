@@ -1,9 +1,6 @@
 package juegoPalabra;
 
 public class Wordle {
-    //Las constantes de los colores para el titulo
-	public static final String RESET = "\u001B[0m";
-    public static final String VERDE = "\u001B[32m";
     
     private static final String PALABRAS_FILE = "Palabras5L.txt";
     private static final String SAVE_FILE = "wordle_save.dat";
@@ -20,7 +17,7 @@ public class Wordle {
     public static void menu(){
 		Scanner sc = new Scanner(System.in);
 		int opcion;
-		    System.out.println(AMARILLO+"          La Palabra del Día          "+RESET);	
+		    System.out.println("          La Palabra del Día          ");	
 
 		do{
 			System.out.println("Selecciona una opción");
