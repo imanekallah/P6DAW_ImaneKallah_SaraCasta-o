@@ -47,7 +47,7 @@ public class Wordle {
                 palabras = new ArrayList<>();
                 
                 // Filtrar palabras de 5 letras usando foreach
-                for (String palabra : palabras) {
+                for (String palabra : palabrasArray) {
                     String palabraTrim = palabra.trim();
                     if (palabraTrim.length() == 5) {
                         palabras.add(palabraTrim);
